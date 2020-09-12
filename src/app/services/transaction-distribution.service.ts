@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { TransactionDistribution } from '../model/transaction-distribution';
 
 @Injectable({
@@ -23,5 +24,9 @@ export class TransactionDistributionService {
       {"parentLevel": 1, "parentId":2, "level":2, "elementId": 4, "elementName":"Distrito 04", "regularTransactions": 5, "mobileTransactions": 25},
       {"parentLevel": 1, "parentId":2, "level":2, "elementId": 5, "elementName":"Distrito 04", "regularTransactions": 5, "mobileTransactions": 25}
     ];
+   }
+
+   getTransactionDistribution(parentLevel, initialDate, finalDate):Observable<TransactionDistribution[]>{
+    return of(this.transactions.filter((distribution) => distribution.parentLevel == parentLevel));  
    }
 }
