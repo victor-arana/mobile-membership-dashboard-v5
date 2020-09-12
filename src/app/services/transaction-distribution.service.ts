@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
+import { delay } from "rxjs/operators";
 import { TransactionDistribution } from '../model/transaction-distribution';
+
 
 @Injectable({
   providedIn: 'root'
@@ -27,6 +29,6 @@ export class TransactionDistributionService {
    }
 
    getTransactionDistribution(parentLevel, initialDate, finalDate):Observable<TransactionDistribution[]>{
-    return of(this.transactions.filter((distribution) => distribution.parentLevel == parentLevel));  
+    return of(this.transactions.filter((distribution) => distribution.parentLevel == parentLevel)).pipe(delay(200));  
    }
 }
