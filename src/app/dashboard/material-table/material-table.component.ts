@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { TransactionDistribution } from 'src/app/model/transaction-distribution';
 import { Observable } from 'rxjs';
 
@@ -12,8 +12,11 @@ export class MaterialTableComponent implements OnInit {
   columnsToDisplay = ['level', 'regularTransactions', 'mobileTransactions'];
 
   @Input() public distributions: Observable<TransactionDistribution[]>;
+  @Output() public itemSelect: EventEmitter<TransactionDistribution>;
 
-  constructor() { }
+  constructor() { 
+    this.itemSelect = new EventEmitter<TransactionDistribution>();
+  }
 
   ngOnInit(): void {
   }
