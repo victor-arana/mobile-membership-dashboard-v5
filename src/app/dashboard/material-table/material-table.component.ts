@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { TransactionDistribution } from 'src/app/model/transaction-distribution';
 import { Observable } from 'rxjs';
 
@@ -11,7 +11,7 @@ export class MaterialTableComponent implements OnInit {
 
   columnsToDisplay = ['level', 'regularTransactions', 'mobileTransactions'];
 
-  public distributions: Observable<TransactionDistribution[]>;
+  @Input() public distributions: Observable<TransactionDistribution[]>;
 
   constructor() { }
 
