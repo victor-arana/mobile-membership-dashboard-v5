@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { TransactionDistributionService } from './services/transaction-distribution.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
+import { MaterialTableComponent } from './dashboard/material-table/material-table.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MaterialTableComponent
   ],
   imports: [
     BrowserModule,
