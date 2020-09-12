@@ -20,5 +20,7 @@ export class MaterialTableComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  onItemSelect(row){
+    this.itemSelect.emit(row);
+  }
 }
