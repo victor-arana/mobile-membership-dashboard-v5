@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TransactionDistribution } from 'src/app/model/transaction-distribution';
 
 @Component({
   selector: 'app-material-table',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./material-table.component.css']
 })
 export class MaterialTableComponent implements OnInit {
+
+  public distributions: TransactionDistribution[]
 
   constructor() { }
 
