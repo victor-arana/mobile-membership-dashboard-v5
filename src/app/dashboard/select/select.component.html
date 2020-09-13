@@ -1,1 +1,12 @@
-<p>select works!</p>
+
+<h3>Vista</h3>
+<mat-form-field appearance="fill">
+    <mat-label>Select a region</mat-label>
+    <mat-select (selectionChange)="onItemSelect($event.value)">
+        <mat-option *ngFor="let distribution of distributions" 
+                    [value]="distribution">
+            {{distribution.elementName}}
+        </mat-option>
+    </mat-select>  
+</mat-form-field>
+
