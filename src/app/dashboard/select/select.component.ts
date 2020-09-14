@@ -17,7 +17,7 @@ export class SelectComponent {
   }
   
   onItemSelect(row){
-    console.log(row);
+    console.log("on SelectComponent.onItemSelect()",row);
     this.itemSelect.emit(row);
   }
 }

@@ -19,6 +19,7 @@ export class MaterialTableComponent {
   }
 
   onItemSelect(row){
+    console.log("on MaterialTableComponent.onItemSelect()",row);
     this.itemSelect.emit(row);
   }
 }
