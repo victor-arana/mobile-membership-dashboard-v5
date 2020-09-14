@@ -1,6 +1,6 @@
 <h3>Vista:</h3>
 <app-select [distributions]="regions" (itemSelect)="onItemSelect($event)"></app-select>
 <app-select *ngIf="districts" [distributions]="districts" (itemSelect)="onItemSelect($event)"></app-select>
-<!-- <app-select *ngIf="clubs" [distributions]="clubs" (itemSelect)="onItemSelect($event)"></app-select> -->
-<app-material-table [distributions]="transactions" (itemSelect)="onItemSelect($event)"></app-material-table>
+<app-select *ngIf="clubs" [distributions]="clubs" (itemSelect)="onItemSelect($event)"></app-select>
+<!-- <app-material-table [distributions]="transactions" (itemSelect)="onItemSelect($event)"></app-material-table> -->
 <router-outlet></router-outlet>

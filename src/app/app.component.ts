@@ -12,6 +12,7 @@ export class AppComponent implements OnInit{
 
   public regions: TransactionDistribution[];
   public districts: TransactionDistribution[];
+  public clubs: TransactionDistribution[];
 
   constructor(private service: TransactionDistributionService){
     this.regions = [
@@ -24,8 +25,12 @@ export class AppComponent implements OnInit{
   }
 
   onItemSelect(item){
-    if()
-    this.service.getTransactionDistribution(item.level, item.elementId, new Date()).subscribe(d => this.transactions = d);
-    console.log("app receives event: ",event);
+    console.log("item: ", item);
+    if(item.level==1){
+      this.service.getTransactionDistribution(item.level, item.elementId, new Date()).subscribe(d => this.districts = d);
+    } else if (item.level==2){
+      this.service.getTransactionDistribution(item.level, item.elementId, new Date()).subscribe(d => this.clubs = d);
+    }
+    console.log("app receives event: ",item);
   }
 }

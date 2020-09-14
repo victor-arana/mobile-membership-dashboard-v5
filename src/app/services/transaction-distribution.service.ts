@@ -24,7 +24,16 @@ export class TransactionDistributionService {
       {"parentLevel": 1, "parentId":2, "level":2, "elementId": 2, "elementName":"Distrito 02", "regularTransactions": 5, "mobileTransactions": 25},
       {"parentLevel": 1, "parentId":2, "level":2, "elementId": 3, "elementName":"Distrito 03", "regularTransactions": 20, "mobileTransactions": 50},
       {"parentLevel": 1, "parentId":2, "level":2, "elementId": 4, "elementName":"Distrito 04", "regularTransactions": 5, "mobileTransactions": 25},
-      {"parentLevel": 1, "parentId":2, "level":2, "elementId": 5, "elementName":"Distrito 04", "regularTransactions": 5, "mobileTransactions": 25}
+      {"parentLevel": 1, "parentId":2, "level":2, "elementId": 5, "elementName":"Distrito 04", "regularTransactions": 5, "mobileTransactions": 25},
+      {"parentLevel": 2, "parentId":1, "level":3, "elementId": 1, "elementName":"Club 01", "regularTransactions": 20, "mobileTransactions": 50},
+      {"parentLevel": 2, "parentId":1, "level":3, "elementId": 2, "elementName":"Club 02", "regularTransactions": 5, "mobileTransactions": 25},
+      {"parentLevel": 2, "parentId":1, "level":3, "elementId": 3, "elementName":"Club 03", "regularTransactions": 20, "mobileTransactions": 50},
+      {"parentLevel": 2, "parentId":1, "level":3, "elementId": 4, "elementName":"Club 04", "regularTransactions": 5, "mobileTransactions": 25},
+      {"parentLevel": 2, "parentId":2, "level":3, "elementId": 5, "elementName":"Club 05", "regularTransactions": 20, "mobileTransactions": 50},
+      {"parentLevel": 2, "parentId":2, "level":3, "elementId": 6, "elementName":"Club 06", "regularTransactions": 5, "mobileTransactions": 25},
+      {"parentLevel": 2, "parentId":2, "level":3, "elementId": 7, "elementName":"Club 07", "regularTransactions": 20, "mobileTransactions": 50},
+      {"parentLevel": 2, "parentId":2, "level":3, "elementId": 8, "elementName":"Club 08", "regularTransactions": 5, "mobileTransactions": 25},
+      {"parentLevel": 2, "parentId":2, "level":3, "elementId": 9, "elementName":"Club 09", "regularTransactions": 5, "mobileTransactions": 25}
     ];
    }
 
